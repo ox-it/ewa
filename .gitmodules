@@ -12,7 +12,7 @@
 	url = http://github.com/puppetlabs/puppetlabs-mysql.git
 [submodule "puppet/modules/phpmyadmin"]
 	path = puppet/modules/phpmyadmin
-	url = git@github.com:ox-it/puppet-phpmyadmin.git
+	url = http://github.com/ox-it/puppet-phpmyadmin.git
 [submodule "puppet/modules/account"]
 	path = puppet/modules/account
 	url = http://github.com/torrancew/puppet-account.git
