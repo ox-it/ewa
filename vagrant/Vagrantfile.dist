@@ -1,0 +1,40 @@
+# Copy this file to `Vagrantfile` in the same directory, 
+# Optional: change the IP address if you so desire. 
+# To connect to the VM via ssh, simply do `vagrant ssh`
+# If you change any of the puppet code (not your application code, 
+# which automatically synced), do `vagrant provision` to update the VM
+
+Vagrant.configure("2") do |config|
+
+	config.vm.provider "virtualbox" do |v|
+		v.name = "ewa-vm.oucs.ox.ac.uk"
+		v.memory = 1536
+		v.cpus = 2
+		v.gui = false
+		v.customize [
+			"modifyvm", :id,
+            "--groups", "/oxdrupal",
+            "--cpuexecutioncap", "75",
+            "--nictype1", "virtio",
+            "--natdnshostresolver1", "on"
+	    ]
+	end
+
+	config.vm.box = "trusty"
+	config.vm.box_url = "https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box"
+
+	config.vm.hostname = "ewa-vm.oucs.ox.ac.uk"
+	config.vm.network "private_network", ip: "192.168.33.25"
+
+	config.vm.synced_folder "../puppet/hieradata", "/tmp/vagrant-puppet/hieradata", :mount_options => ["ro"]
+
+	config.vm.provision "shell", path: "shell_provisioner.sh", run: "once"
+
+	config.vm.provision "puppet" do |puppet|
+		puppet.manifests_path = "../puppet/manifests"
+		puppet.manifest_file = "site.pp"
+		puppet.module_path = "../puppet/modules"
+		puppet.hiera_config_path = "../puppet/hiera.yaml"
+		puppet.working_directory = "/tmp/vagrant-puppet"
+	end
+end

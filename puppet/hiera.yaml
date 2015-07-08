@@ -1,0 +1,15 @@
+---
+:backends:
+  - yaml
+
+:hierarchy:
+  - "dev/%{fqdn}"
+  - "dev/common"
+  - "%{fqdn}"
+  - "common"
+
+:merge_behaviour:
+    - 'deeper'
+
+:yaml:
+  :datadir: 'hieradata'

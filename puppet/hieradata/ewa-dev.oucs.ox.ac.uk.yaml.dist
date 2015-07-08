@@ -1,0 +1,54 @@
+---
+accounts:
+    andrewhaith:
+        ssh_key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQC+ecEke9LccxzJl/C+rgyp5SvCjhxqR4bj4xNaEK6okaI1yidhKQAXX2fHiKwj8UjxKDWPwc9iIhCEshnirU3/i5oGCrBhc+qboZQjSQr7ujgMjAy/ZVrUSB6ZhW1GNboJ6U0pELzkrAE3VSgccOXxWk5ryapqXfU3acWdqaUVpUxgFU7zgBj+tdwXcqjomiHISabsdyVsMMt9YVOkIn6Tkhlhsa4+Lmabtbdm/ySDJAuc/ws+KtUzMi6+YcyR5gGdIxhoICbE9iDdTE2yIC+YVc6/zVOsq5+jOfWKZ7dTNG4VHViZKKlhXWIzRLP7ap3z3t1s2xJ6wmtAmcFfVtcJ'
+        ssh_key_type: ssh-rsa
+        home_dir: '/home/andrewhaith'
+        groups:
+            - andrewhaith
+        comment: Andrew Haith
+    andrewhemming:
+        ssh_key: 'AAAAB3NzaC1yc2EAAAABJQAAAIBedIIMmSbgoyuT/Kszn6dLlCvI1fFpnqcNwevSdY8LrZEmEsySkTf8SL7H6DpansMc/UtyQiTO6ZeaeK/PdRq3/uy9dAD7ERSUd3rV1G6v0V6weRMLvqqE/qTI0x+8x0Agad6Ue4vRUSqMZWxpw077dXd+KEBjueIXfrr4lFikuw=='
+        ssh_key_type: ssh-rsa
+        home_dir: '/home/andrewhemming'
+        groups:
+            - admin
+            - andrewhemming
+        comment: Andrew Hemming
+    kevinmcglynn:
+        ssh_key: 'AAAAB3NzaC1yc2EAAAABEQAAAQEAn30SVvFSafg3EfO6KVYMJXg7XklL2505Q3xB3IFZTskqVW7795sWf2QnaBTkOfxrNRn1g2O7I+b9HLUMD/mEAj4B+hWLNq7UNfrVRU4TYxXwxmEl8FMZ0aZUKzQuH+Yq6+G5cKm/ifmFZfcsWyPHM39RLaCa1SjAGsTk0gjUnlysKo2iLwP5nvOTSPwHyOGgGeloJtlRdQybUzWlD4qUwcto6ixwZR0CODyDOVLh9ISgSY1BBHKWso5gSSG2k9Imv3VVvkOCgunfFjiDC+MZybYs8KnVotV5HrCMUlTuLVBWnVbIG/XPOM7YWH5YyB4mCTs6Q0+0miDUpRXSQiaTKQ=='
+        ssh_key_type: ssh-rsa
+        home_dir: '/home/kevinmcglynn'
+        groups:
+            - admin
+            - kevinmcglynn
+        comment: Kevin Mcglynn
+    richardb:
+        ssh_key: 'AAAAB3NzaC1kc3MAAACBANqsUFuiRZQN3dHdx7/MtstmxFsjsSPUZVYLinlfdAJP9ryxj6mBP9w2xasarg5y4NZJLaAR39thXhN2QjDNSiAGAL4nUQLBSucqSC3R7dZLB3FyFb7ogw3mXwcUcyAAPOg/G52PxMjqaBAtZ2lMBcDSwMwv9M38uZoSLYo+EIqvAAAAFQDLHwPQ6VJUMOU9xRhkIWk0fVkx2QAAAIEAgxwS0zh4Z+UN6K12q+9BVsFIUFiTzwMai8quias/n7CbvkdMCHU70WauttYjvgGFnGwov4JftzFM0vxbcFnHl/DGHyAngbba/h8rKNHWvkixtdnhBk87UbGb/iLksv25UV/2AXc7JyLFzK1dCcVbQJ5C4yXkAZb+sPWYkMKt2T4AAACAV+tv+uZdcja5YxNgA5kUUMEB4Duf6YHjqTV0rZ0TWrzwLlLrVTqVS3J6zNWw2DjP/jJSYsD5BYcEke1NhHnV3CXC/V+49+73RIz92kVFYZ2L1V/C8/FPCnQiGvx2nGHNMxkLMlkvQXs+JgxQGv69Zsm9wbj6N3h3hBUmmSVjQCU='
+        ssh_key_type: ssh-dss
+        home_dir: '/home/richardb'
+        groups:
+            - admin
+            - richardb
+        comment: Richard Buckner
+    tedkoterwas:
+        ssh_key: 'AAAAB3NzaC1yc2EAAAABIwAAAQEA4DPPT470qCajU+t/XT/TuMQlIdWQBBzZUp6DUaW/F4EX+0LnInk+9GrZ9Fm36SOK/cT/LyokOQnbX8i+PXhZg+eIGaYCSvcdT/ec4uYu+197ZBSGZaiOxkiNFN8YBixDL7Uze/tVT7OzIIcqjd1Y9AIjcgbUHwrQFF9N52T2evcJDcQuTrmJZp2JzcSqIDRbplkJKvLrTBq2G8V2pn0Jl5wap5e6dKd1eigf3PDWCDAwk8VqHEYaHrmyILjaWHhvuI2BjFI7OKkriDHat+f8/C3pCQm4DxmgRJv6uDUbRz8do7gFuzM38Cwc/NZOsnrq2NMzZztF19yTTN+YADiVbQ=='
+        ssh_key_type: ssh-rsa
+        home_dir: '/home/tedkoterwas'
+        groups:
+            - admin
+            - tedkoterwas
+        comment: Ted Koterwas
+
+# Please put strong credentials in the fields below then save this file without the
+# .dist extension.
+
+ewa::mysql::app_username: ewa
+ewa::mysql::app_password: 
+
+ewa::mysql::pma_password: 
+
+ewa::mysql::root_password: 
+
+ewa::svn::enable: true
+ewa::svn::password: 
