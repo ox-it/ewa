@@ -16,3 +16,7 @@
 # Vagrant 
 .vagrant
 Vagrantfile
+
+# Hiera
+/puppet/hieradata/*.yaml
+!/puppet/hieradata/*.yaml.dist
