@@ -51,4 +51,5 @@ ewa::mysql::pma_password:
 ewa::mysql::root_password: 
 
 ewa::svn::enable: true
+ewa::svn::username:
 ewa::svn::password: 

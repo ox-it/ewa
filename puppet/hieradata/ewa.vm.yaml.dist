@@ -44,7 +44,7 @@ accounts:
 # should contain strong passwords and should not be stored in a public repository etc.
 # Save this file without the .dist extension for it to become active
 
-ewa::mysql::app_username: ewa-vm
+ewa::mysql::app_username: ewa
 ewa::mysql::app_password: password
 
 ewa::mysql::pma_password: password
@@ -52,4 +52,5 @@ ewa::mysql::pma_password: password
 ewa::mysql::root_password: password
 
 ewa::svn::enable: true
+ewa::svn::username:
 ewa::svn::password: 
