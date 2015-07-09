@@ -12,7 +12,7 @@ Steps:
 
 3. Install vagrant-hostsupdater plugin by running `vagrant plugin install vagrant-hostsupdater`.
 
-4. Clone [this repository](https://github.com/ox-it/ewa) to your machine, to a location of your choosing: `git clone https://github.com/ox-it/ewa`
+4. Choose a location on your machine and clone [the repository](https://github.com/ox-it/ewa): `git clone https://github.com/ox-it/ewa`. Git will automatically checkout the repository to a new *ewa* folder.
 
 5. Copy *ewa/puppet/hieradata/ewa.vm.yaml.dist* to *ewa/puppet/hieradata/ewa.vm.yaml*
 
