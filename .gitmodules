@@ -16,10 +16,6 @@
 [submodule "puppet/modules/account"]
 	path = puppet/modules/account
 	url = http://github.com/torrancew/puppet-account.git
-[submodule "modules/vcsrepo"]
-	path = puppet/modules/vcsrepo
-	url = https://github.com/puppetlabs/puppetlabs-vcsrepo.git
-
 [submodule "puppet/modules/vcsrepo"]
 	path = puppet/modules/vcsrepo
 	url = https://github.com/puppetlabs/puppetlabs-vcsrepo.git
