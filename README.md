@@ -14,7 +14,7 @@ Steps:
 
 4. Choose a location on your machine and clone [the repository](https://github.com/ox-it/ewa): `git clone https://github.com/ox-it/ewa`. Git will automatically checkout the repository to a new *ewa* folder.
 
-5. Copy *ewa/puppet/hieradata/ewa.vm.yaml.dist* to *ewa/puppet/hieradata/ewa.vm.yaml*. Open this file for editing, go to the bottom and insert the provided credentials in ewa::svn::username: and ewa::svn::password:
+5. Copy *ewa/puppet/hieradata/ewa.vm.yaml.dist* to *ewa/puppet/hieradata/ewa.vm.yaml*. Open this file for editing, go to the bottom and insert the provided credentials in ewa::svn::username: and ewa::svn::password: **(Please ensure there is a space between the name and the value, i.e. ewa::svn::username: myusername instead of ewa::svn::username:myusername)**
 
 6. cd into the *ewa/vagrant* directory.
 
@@ -27,3 +27,5 @@ Steps:
 10. Navigate to *[ewa.vm](http://ewa.vm/)* in your web browser.
 
 11. Database access is available at http://ewa.vm/phpmyadmin. The username is *ewa* and the password is *password*
+
+12. To shut the virtual machine down, run `vagrant halt`
