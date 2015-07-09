@@ -14,10 +14,14 @@ Steps:
 
 4. Clone [this repository](https://github.com/ox-it/ewa) to your machine, to a location of your choosing: `git clone https://github.com/ox-it/ewa`
 
-5. cd into the *vagrant* directory.
+5. Copy *ewa/puppet/hieradata/ewa.vm.yaml.dist* to *ewa/puppet/hieradata/ewa.vm.yaml*
 
-6. Enter the command `vagrant up`. Wait a few minutes for the provisioning process to complete.
+6. cd into the *ewa/vagrant* directory.
 
-7. Navigate to *[ewa.vm](http://ewa.vm/)* in your web browser.
+7. Copy Vagrantfile.dist to Vagrantfile
 
-8. Database access is available at http://ewa.vm/phpmyadmin. The username is *ewa* and the password is *password*
+8. Enter the command `vagrant up`. Wait a few minutes for the provisioning process to complete.
+
+9. Navigate to *[ewa.vm](http://ewa.vm/)* in your web browser.
+
+10. Database access is available at http://ewa.vm/phpmyadmin. The username is *ewa* and the password is *password*
