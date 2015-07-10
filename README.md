@@ -1,4 +1,6 @@
-# EWA local development server
+# EWA 
+
+## Local development server
 
 This repository contains code and instructions to set up a local blank copy of the EWA website on a desktop computer
 
@@ -29,3 +31,14 @@ Steps:
 11. Database access is available at http://ewa.vm/phpmyadmin. The username is *ewa* and the password is *password*
 
 12. To shut the virtual machine down, run `vagrant halt`
+
+## Remote development server (running Ubuntu 14.04 LTS)
+
+Steps:
+
+1. Copy the contents of the *puppet* directory to /etc/puppet on the server
+2. cd into /etc/puppet, make the install_puppet.sh script executable and run it as root or via sudo: `sudo ./install_puppet.sh`
+3. Copy /etc/puppet/hieradata/ewa-dev.oucs.ox.ac.uk.yaml.dist to a file that reflects the actual hostname of the machine, for example my-ewa-dev.co.uk.yaml, open the file for editing and populate the security credentials at the bottom
+4. cd into /etc/puppet and run `sudo puppet apply manifests/site.pp`. Wait a few minutes for the process to complete.
+5. Navigate to http://DOMAIN_NAME/ in your web browser.
+6. Database access is available at http://DOMAIN_NAME/phpmyadmin. The credentials are in the hieradata/yaml file

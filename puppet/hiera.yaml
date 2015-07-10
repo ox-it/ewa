@@ -3,10 +3,8 @@
   - yaml
 
 :hierarchy:
-  - "dev/%{fqdn}"
-  - "dev/common"
   - "%{fqdn}"
-  - "common"
+  - "ewa.vm"
 
 :merge_behaviour:
     - 'deeper'
