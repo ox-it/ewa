@@ -81,25 +81,10 @@ class ewa::lamp () {
         require => Class['apache::mod::php'],
 	}
 
-	# MySQL
-
-	# Install and configure MySQL Server
-	$mysql_root_password = hiera('ewa::mysql::root_password')
-	$mysql_options = {}
-	class {	'::mysql::server':
-		root_password           => $mysql_root_password,
-		remove_default_accounts => true,
-		override_options        => $mysql_options,
-	}
-
-	# Copy the SQL file to the server
-	file {'import.sql':
-		path => '/root/import.sql',
-		source => 'puppet:///modules/ewa/ewa_db-20150709.sql'
-	}
+	include ewa::mysql
 
 	# Create a database, user and import the SQL file
-	mysql::db { 'ewa_db':
+	::mysql::db { 'ewa_db':
 		user     => hiera('ewa::mysql::app_username'),
 		password => hiera('ewa::mysql::app_password'),
 		host     => 'localhost',
